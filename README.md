@@ -1,6 +1,6 @@
-# AXIS / Mobi - Minimalist Landing Page
+# AXIS/Mobi - Interactive Landing Page
 
-AXIS / Mobi is a sleek and modern **minimalist landing page** built using **Bootstrap 5**. It features a **dynamic hero section with a slider and a contact form overlay**, making it an ideal choice for showcasing products, services, or businesses.
+AXIS/Mobi is a sleek and modern **interactive landing page** built using **Bootstrap 5**. It features a **dynamic hero section with a slider and a contact form overlay**, making it an ideal choice for showcasing products, services, or businesses.
 
 ## 🚀 Features
 
