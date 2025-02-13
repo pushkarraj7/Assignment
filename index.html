@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AXIS / Mobi</title>
+
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <span class="brand-text">AXIS /</span>
+                        <span class="brand-text-highlight">Mobi</span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#subscribe">Subscribe</a>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <div class="search-box">
+                                    <input class="form-control" type="search"
+                                        placeholder="Search..."
+                                        aria-label="Search">
+                                    <button class="btn search-btn"
+                                        type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <a href="#contact"
+                                    class="btn btn-primary rounded-pill">
+                                    Contact Us
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section with Slider and Contact Form -->
+        <section id="home" class="hero-section">
+            <!-- Slider -->
+            <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroSlider"
+                        data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroSlider"
+                        data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroSlider"
+                        data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3"
+                            class="d-block w-100" alt="Technology">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">
+                            <h2>Welcome to AXIS / <span
+                                    class="text-danger">Mobi</span></h2>
+                            <p>Transforming ideas into digital excellence</p>
+                            <a href="#features"
+                                class="btn btn-primary btn-lg mt-3">
+                                Explore More
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3"
+                            class="d-block w-100" alt="Innovation">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">
+                            <h2>Innovative Solutions</h2>
+                            <p>Creating the future of digital experiences</p>
+                            <a href="#contact"
+                                class="btn btn-primary btn-lg mt-3">
+                                Get Started
+                                <i class="fas fa-rocket ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3"
+                            class="d-block w-100" alt="Support">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-caption">
+                            <h2>24/7 Expert Support</h2>
+                            <p>Dedicated customer service whenever you need
+                                it</p>
+                            <a href="#contact"
+                                class="btn btn-primary btn-lg mt-3">
+                                Contact Us
+                                <i class="fas fa-headset ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#heroSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#heroSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Contact Form Overlay -->
+            <div class="contact-form-overlay">
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3>Get in Touch</h3>
+                        <p>We'd love to hear from you</p>
+                    </div>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control"
+                                id="nameInput" placeholder="Your Name" required>
+                            <label for="nameInput"><i
+                                    class="fas fa-user me-2"></i>Your
+                                Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control"
+                                id="emailInput" placeholder="Email Address"
+                                required>
+                            <label for="emailInput"><i
+                                    class="fas fa-envelope me-2"></i>Email
+                                Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control"
+                                id="phoneInput" placeholder="Phone Number"
+                                required>
+                            <label for="phoneInput"><i
+                                    class="fas fa-phone me-2"></i>Phone
+                                Number</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <textarea class="form-control" id="messageInput"
+                                placeholder="Your Message" style="height: 100px"
+                                required></textarea>
+                            <label for="messageInput"><i
+                                    class="fas fa-comment me-2"></i>Your
+                                Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            Send Message
+                            <i class="fas fa-paper-plane ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Cards Section -->
+        <section id="features" class="features-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>Our Features</h2>
+                    <p class="text-muted">Discover what makes us different</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Static Card -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-4">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4 class="card-title">Fast Performance</h4>
+                                <p class="card-text">Lightning-fast loading
+                                    times and smooth interactions for the best
+                                    user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Animated Card -->
+                    <div class="col-md-4">
+                        <div class="card feature-card animated h-100">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-4">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4 class="card-title">Secure Platform</h4>
+                                <p class="card-text">Enterprise-grade security
+                                    with advanced encryption and protection.</p>
+                                <div class="hover-content">
+                                    <ul class="list-unstyled">
+                                        <li>24/7 Monitoring</li>
+                                        <li>SSL Protection</li>
+                                        <li>Data Encryption</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Static Card -->
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body text-center">
+                                <div class="icon-wrapper mb-4">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h4 class="card-title">24/7 Support</h4>
+                                <p class="card-text">Round-the-clock customer
+                                    support to help you with any questions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DataTable Section -->
+        <section id="data-table" class="data-table-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>Data Table</h2>
+                    <p class="text-muted">Explore the interactive features of
+                        our table</p>
+                </div>
+
+                <table id="myTable" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">John Doe</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">28</td>
+                            <td>john@example.com</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Jane Smith</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">34</td>
+                            <td>jane@example.com</td>
+                            <td>UK</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Rahul Kumar</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">29</td>
+                            <td>rahul.kumar@example.in</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Priya Sharma</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">26</td>
+                            <td>priya.sharma@example.in</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Michael Brown</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">40</td>
+                            <td>michael.brown@example.com</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Amit Singh</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">35</td>
+                            <td>amit.singh@example.in</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Sarah Lee</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">32</td>
+                            <td>sarah.lee@example.com</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Vikram Patel</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">31</td>
+                            <td>vikram.patel@example.in</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Emma Davis</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">27</td>
+                            <td>emma.davis@example.com</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Sandeep Reddy</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">29</td>
+                            <td>sandeep.reddy@example.in</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Alice Green</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">33</td>
+                            <td>alice.green@example.com</td>
+                            <td>UK</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Shivani Verma</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">27</td>
+                            <td>shivani.verma@example.in</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">James Wilson</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">37</td>
+                            <td>james.wilson@example.com</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Nina Gupta</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">32</td>
+                            <td>nina.gupta@example.in</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's name">Chris Martin</td>
+                            <td data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="User's age">34</td>
+                            <td>chris.martin@example.com</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>Frequently Asked Questions</h2>
+                    <p class="text-muted">Find answers to common questions</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="faq-controls mb-4">
+                            <button class="btn btn-outline-primary me-2"
+                                id="expandAll">Expand All</button>
+                            <button class="btn btn-outline-primary"
+                                id="collapseAll">Collapse All</button>
+                        </div>
+
+                        <div class="accordion" id="faqAccordion">
+                            <!-- FAQ Item 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        How do I get started?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Getting started is easy! Simply sign up
+                                        for an account and follow our quick
+                                        setup guide.
+                                        Our platform is designed to be
+                                        user-friendly and intuitive.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        What payment methods do you accept?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We accept all major credit cards,
+                                        PayPal, and bank transfers.
+                                        All payments are processed securely
+                                        through our encrypted payment system.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Can I cancel my subscription anytime?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, you can cancel your subscription at
+                                        any time.
+                                        There are no long-term contracts or
+                                        cancellation fees.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour"
+                                        aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Do you offer customer support?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we offer 24/7 customer support
+                                        through
+                                        live chat, email, and phone. Our team is
+                                        ready to assist you with any inquiries
+                                        or issues.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive"
+                                        aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Is my data secure on your platform?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingFive"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we take data security very
+                                        seriously. We
+                                        use advanced encryption methods to
+                                        protect
+                                        your personal and financial information.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 6 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix"
+                                        aria-expanded="false"
+                                        aria-controls="collapseSix">
+                                        Can I upgrade or downgrade my plan?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingSix"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, you can easily upgrade or downgrade
+                                        your
+                                        plan at any time through your account
+                                        settings.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 7 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven"
+                                        aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Do you offer a free trial?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we offer a 14-day free trial so you
+                                        can
+                                        try out our platform and explore its
+                                        features.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section id="subscribe" class="subscribe-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="subscribe-wrapper text-center">
+                            <h2>Stay Updated</h2>
+                            <p class="text-muted mb-4">Subscribe to our
+                                newsletter for the latest updates and exclusive
+                                offers</p>
+
+                            <form id="subscribeForm" class="subscribe-form">
+                                <div class="input-group">
+                                    <input type="email" class="form-control"
+                                        placeholder="Enter your email" required>
+                                    <button class="btn btn-primary"
+                                        type="submit">
+                                        Subscribe
+                                        <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                                <div class="form-text text-muted mt-2">
+                                    We respect your privacy and will never share
+                                    your email
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Modal -->
+            <div class="modal fade" id="subscribeModal" tabindex="-1"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body text-center py-4">
+                            <i class="fas fa-check-circle text-success mb-3"
+                                style="font-size: 3rem;"></i>
+                            <h4>Thank You!</h4>
+                            <p class="mb-0">You have successfully subscribed to
+                                our newsletter.</p>
+                        </div>
+                        <div
+                            class="modal-footer border-0 justify-content-center">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Clients Section -->
+        <section id="clients" class="clients-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2>Our Clients</h2>
+                    <p class="text-muted">Trusted by leading companies
+                        worldwide</p>
+                </div>
+
+                <div class="client-carousel-wrapper">
+                    <button class="carousel-control prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="client-carousel">
+                        <!-- Microsoft -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Microsoft/Microsoft-Logo.wine.svg"
+                                    alt="Microsoft">
+                                <div class="logo-overlay">
+                                    <h5>Microsoft</h5>
+                                    <p>Cloud Infrastructure Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Google/Google-Logo.wine.svg"
+                                    alt="Google">
+                                <div class="logo-overlay">
+                                    <h5>Google</h5>
+                                    <p>AI & Machine Learning Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Amazon -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Amazon_(company)/Amazon_(company)-Logo.wine.svg"
+                                    alt="Amazon">
+                                <div class="logo-overlay">
+                                    <h5>Amazon</h5>
+                                    <p>E-commerce Solutions Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IBM -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/IBM/IBM-Logo.wine.svg"
+                                    alt="IBM">
+                                <div class="logo-overlay">
+                                    <h5>IBM</h5>
+                                    <p>Enterprise Solutions Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Oracle -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Oracle_Corporation/Oracle_Corporation-Logo.wine.svg"
+                                    alt="Oracle">
+                                <div class="logo-overlay">
+                                    <h5>Oracle</h5>
+                                    <p>Database Solutions Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Salesforce -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Salesforce.com/Salesforce.com-Logo.wine.svg"
+                                    alt="Salesforce">
+                                <div class="logo-overlay">
+                                    <h5>Salesforce</h5>
+                                    <p>CRM Solutions Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Adobe -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Adobe_Inc./Adobe_Inc.-Logo.wine.svg"
+                                    alt="Adobe">
+                                <div class="logo-overlay">
+                                    <h5>Adobe</h5>
+                                    <p>Creative Solutions Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intel -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Intel/Intel-Logo.wine.svg"
+                                    alt="Intel">
+                                <div class="logo-overlay">
+                                    <h5>Intel</h5>
+                                    <p>Hardware Solutions Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cisco -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Cisco_Systems/Cisco_Systems-Logo.wine.svg"
+                                    alt="Cisco">
+                                <div class="logo-overlay">
+                                    <h5>Cisco</h5>
+                                    <p>Networking Solutions Partner</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SAP -->
+                        <div class="client-logo">
+                            <div class="logo-wrapper">
+                                <img
+                                    src="https://www.logo.wine/a/logo/Coca-Cola/Coca-Cola-Logo.wine.svg"
+                                    alt="Coca-Cola">
+                                <div class="logo-overlay">
+                                    <h5>Coca-Cola</h5>
+                                    <p>Global Beverage Leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <!-- About Us -->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="footer-content" data-aos="fade-up">
+                            <h4>About Us</h4>
+                            <p>We are dedicated to providing innovative
+                                solutions and exceptional service to our clients
+                                worldwide.</p>
+                            <div class="footer-brand">
+                                <span class="brand-text">AXIS /</span>
+                                <span class="brand-text-highlight">Mobi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="footer-content" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <h4>Contact Info</h4>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>123 Business Street, New York,
+                                        USA</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+1 234 567 8900</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>info@example.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-lg-4">
+                        <div class="footer-content" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; <span id="currentYear"></span> AXIS / Mobi.
+                            All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- DataTables JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/datatables.net@1.13.4/js/jquery.dataTables.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/datatables.net-bs5@1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+        <!-- Your custom JS file -->
+        <script src="js/main.js"></script>
+
+        <script>
+        $(document).ready(function() {
+            // Initialize DataTable
+            $('#myTable').DataTable({
+                paging: true,
+                searching: true,
+                ordering: true
+            });
+            // Initialize Tooltips
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+        </script>
+    </body>
+</html>
